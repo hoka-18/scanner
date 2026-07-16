@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 1rem;
+        }
+        #reader {
+            width: 100%;
+        }
+        button {
+            width: 100%;
+            padding: 1rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+</head>
+<body>
+    <h2>QR,バーコードリーダー</h2>
+    <div id="reader"></div>
+    <div id="result-area">
+        <h2>読み取り結果</h2>
+        <p id="result"></p>
+        <button id="copy-btn">
+            コピー
+        </button>
+        <button id="restart-btn">
+            もう一度読む
+        </button>
+    </div>
+    <script src="a.js"></script>
+</body>
+</html>
